@@ -1,0 +1,25 @@
+extends layout
+
+block content 
+    a(href="/") back to messages 
+    h1 New message
+        form(
+            method="POST"
+            action="/new"
+        )
+            input(
+                type="text"
+                placeholder="your name"
+                name="author"
+            )
+            br
+            input(
+                type="text"
+                placeholder="your message"
+                name="text"
+            )
+            br
+            input(
+                type="submit"
+                value="envoyer votre message"
+            )
